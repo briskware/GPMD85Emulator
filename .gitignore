@@ -1,0 +1,13 @@
+#*.o
+#config.*
+#*~
+#Makefile
+*.iml
+#GPMD85emu
+#compile
+#.deps
+#autom4te.cache
+.idea
+#*.m4
+#*.a
+#stamp-*

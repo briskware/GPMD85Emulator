@@ -31,3 +31,11 @@ CONFIGURATION PARAMETERS:
   optional parameter './configure --with-opengl' or '--without-opengl'.
 ~ to enable trace informations use '--enable-trace' parameter in configure.
 
+BUILDING ON MAC OS X:
+~ run the following commands:
+  $ autoreconf -vf #this will fail asking for automake --add-missingmk
+  $ automake --add-missing
+  $ autoreconf -vf
+  $ configure --with-opengl
+  $ vi Makefile # find LDFLAGS and remove the -s option
+  $ make
