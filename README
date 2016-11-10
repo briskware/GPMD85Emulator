@@ -33,9 +33,9 @@ CONFIGURATION PARAMETERS:
 
 BUILDING ON MAC OS X:
 ~ run the following commands:
-  $ autoreconf -vf #this will fail asking for automake --add-missingmk
+  $ autoreconf -vf #this will fail asking for automake --add-missing
   $ automake --add-missing
   $ autoreconf -vf
-  $ configure --with-opengl
+  $ ./configure --with-opengl
   $ vi Makefile # find LDFLAGS and remove the -s option
   $ make
